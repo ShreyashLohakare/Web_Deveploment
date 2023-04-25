@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Form</title>
+</head>
+<body>
+    <h1>Sample Form</h1>
+    <form action="SampleData.jsp" method="post">
+        <fieldset>
+            <legend>Personal Data</legend>
+                <label for="fName">Full Name : </label><input type="text" name="Name" id="fName">
+                <br><br>
+                <label>Gender : </label>
+                <input type="radio" name="Male" id="Gender" value="Male"><label for="Gender">Male</label>
+                <input type="radio" name="Female" id="Gender" value="Female"><label for="Gender">Female</label>
+                <input type="radio" name="Other" id="Gender" value="Other"><label for="Gender">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend>Contact</legend>
+                <label for="Number">Moblie Number: </label><input type="number" name="MoblieNumber" id="Number" maxlength="10">
+                &nbsp; &nbsp; &nbsp;
+                <label for="Email">E-mail : </label><input type="email" name="E-mail" id="Email">
+        </fieldset>
+        <br><br>
+        <input type="submit" name="submitted" value="Submit">
+</form>
+</body>
+</html>
